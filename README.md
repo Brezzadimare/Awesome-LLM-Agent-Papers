@@ -1,75 +1,121 @@
-# 🤖 Awesome LLM & AI Agent Papers
-# 大语言模型与AI智能体论文精选
+# Awesome LLM Agent Papers / 大语言模型智能体论文精选
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Stars](https://img.shields.io/github/stars/Brezzadimare/Awesome-LLM-Agent-Papers?style=social)](https://github.com/Brezzadimare/Awesome-LLM-Agent-Papers/stargazers)
+[![Forks](https://img.shields.io/github/forks/Brezzadimare/Awesome-LLM-Agent-Papers?style=social)](https://github.com/Brezzadimare/Awesome-LLM-Agent-Papers/network/members)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> A curated collection of papers on **Large Language Models (LLM)** and **AI Agents** from **ICLR** and **NeurIPS** (2024–2026).
->
-> 精选 ICLR 和 NeurIPS（2024–2026）中所有关于**大语言模型**和 **AI 智能体**的论文，持续更新。
+> A curated list of must-read papers on **Large Language Model (LLM) Agents**, organized by venue, year, and topic.  
+> 精心整理的**大语言模型智能体**领域必读论文列表，按会议、年份和主题分类。
 
----
-
-## 📖 Table of Contents / 目录
-
-### 📅 By Conference & Year / 按会议年份
-
-| | 2024 | 2025 | 2026 |
-|---|---|---|---|
-| **ICLR** | [📄 Papers](papers/ICLR/2024.md) | [📄 Papers](papers/ICLR/2025.md) | [📄 Papers](papers/ICLR/2026.md) |
-| **NeurIPS** | [📄 Papers](papers/NeurIPS/2024.md) | [📄 Papers](papers/NeurIPS/2025.md) | [📄 Papers](papers/NeurIPS/2026.md) |
-
-### 🏷️ By Topic / 按主题分类
-
-| 主题 | 说明 |
-|------|------|
-| [🧠 LLM Reasoning](topics/llm-reasoning.md) | 推理、Chain-of-Thought、数学推理 |
-| [🎯 LLM Alignment](topics/llm-alignment.md) | RLHF、安全对齐、价值对齐 |
-| [⚡ LLM Efficiency](topics/llm-efficiency.md) | 量化、剪枝、蒸馏、推理加速 |
-| [🤖 Agent Planning](topics/agent-planning.md) | Agent 规划、决策、任务分解 |
-| [🔧 Agent Tool Use](topics/agent-tool-use.md) | 工具调用、代码生成、函数调用 |
-| [👥 Multi-Agent](topics/multi-agent.md) | 多智能体系统、协作、博弈 |
+English | [贡献指南](CONTRIBUTING.md)
 
 ---
 
-## 📊 Statistics / 统计
+## Table of Contents / 目录
 
-| Conference | 2024 | 2025 | 2026 | Total |
-|-----------|------|------|------|-------|
-| ICLR | 🔄 | 🔄 | 🔄 | - |
-| NeurIPS | 🔄 | 🔄 | - | - |
-
-> 🔄 = Updating / 持续更新中
-
----
-
-## 🔍 Paper Format / 论文格式
-
-每篇论文按以下格式收录：
-
-| 标题 | 作者 | 主题标签 | 论文链接 | 代码链接 |
-|------|------|---------|---------|---------|
-| Paper Title | Author et al. | `tag1` `tag2` | [Paper](url) | [Code](url) / - |
+- [📄 Papers by Venue / 按会议分类](#papers-by-venue)
+  - [ICLR](#iclr)
+  - [NeurIPS](#neurips)
+- [🏷️ Papers by Topic / 按主题分类](#papers-by-topic)
+  - [LLM Reasoning](#llm-reasoning)
+  - [LLM Alignment](#llm-alignment)
+  - [LLM Efficiency](#llm-efficiency)
+  - [Agent Planning](#agent-planning)
+  - [Agent Tool Use](#agent-tool-use)
+  - [Multi-Agent Systems](#multi-agent-systems)
+- [📊 Statistics / 统计](#statistics)
+- [🤝 Contributing / 贡献](#contributing)
+- [🔗 Related Resources / 相关资源](#related-resources)
 
 ---
 
-## 🤝 Contributing / 如何贡献
+## Papers by Venue / 按会议分类 <a name="papers-by-venue"></a>
 
-欢迎提交 PR 补充遗漏的论文！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解详细规范。
+### ICLR
+
+| Year | File | # Papers |
+|------|------|----------|
+| 2024 | [papers/ICLR/2024.md](papers/ICLR/2024.md) | 21 |
+| 2025 | [papers/ICLR/2025.md](papers/ICLR/2025.md) | 21 |
+| 2026 | [papers/ICLR/2026.md](papers/ICLR/2026.md) | TBD |
+
+### NeurIPS
+
+| Year | File | # Papers |
+|------|------|----------|
+| 2024 | [papers/NeurIPS/2024.md](papers/NeurIPS/2024.md) | 20 |
+| 2025 | [papers/NeurIPS/2025.md](papers/NeurIPS/2025.md) | 23 |
+| 2026 | [papers/NeurIPS/2026.md](papers/NeurIPS/2026.md) | TBD |
 
 ---
 
-## 📚 Related Resources / 相关资源
+## Papers by Topic / 按主题分类 <a name="papers-by-topic"></a>
 
-- [OpenReview (ICLR)](https://openreview.net/group?id=ICLR.cc)
-- [NeurIPS Papers](https://papers.nips.cc/)
-- [Papers with Code](https://paperswithcode.com/)
-- [Semantic Scholar](https://www.semanticscholar.org/)
-- [Awesome-LLMs-ICLR-24](https://github.com/azminewasi/Awesome-LLMs-ICLR-24)
+| Topic | File | Description |
+|-------|------|-------------|
+| 🧠 LLM Reasoning | [topics/llm-reasoning.md](topics/llm-reasoning.md) | CoT, math reasoning, test-time scaling |
+| ⚖️ LLM Alignment | [topics/llm-alignment.md](topics/llm-alignment.md) | RLHF, DPO, safety, Constitutional AI |
+| ⚡ LLM Efficiency | [topics/llm-efficiency.md](topics/llm-efficiency.md) | MoE, quantization, distillation, SSM |
+| 🗺️ Agent Planning | [topics/agent-planning.md](topics/agent-planning.md) | MCTS, tree search, PDDL planning |
+| 🔧 Agent Tool Use | [topics/agent-tool-use.md](topics/agent-tool-use.md) | APIs, RAG, code execution |
+| 👥 Multi-Agent | [topics/multi-agent.md](topics/multi-agent.md) | AutoGen, ChatDev, MoA, role-playing |
 
 ---
 
-## 📜 License
+## Statistics / 统计 <a name="statistics"></a>
 
-This project is licensed under the MIT License.
+| Venue | 2023 | 2024 | 2025 | Total |
+|-------|------|------|------|-------|
+| ICLR  | —    | 21   | 21   | 42    |
+| NeurIPS | —  | 20   | 23   | 43    |
+| **Total** | — | **41** | **44** | **85** |
+
+### Topic Distribution
+
+| Topic | Count |
+|-------|-------|
+| 🧠 Reasoning | 20+ |
+| 🤖 Agents | 18+ |
+| 👥 Multi-Agent | 8+ |
+| ⚖️ Alignment | 8+ |
+| 🔧 Tool Use | 6+ |
+| ⚡ Efficiency | 5+ |
+
+---
+
+## Paper Format Example / 论文格式示例
+
+Each paper file uses the following table format:
+
+```markdown
+| Title | Authors | Tags | Paper | Code |
+|-------|---------|------|-------|------|
+| [Paper Title](https://arxiv.org/abs/XXXX.XXXXX) | Author et al. | \`tag1\` \`tag2\` | [arXiv](https://arxiv.org/abs/XXXX.XXXXX) | [GitHub](https://github.com/...) |
+```
+
+---
+
+## Contributing / 贡献 <a name="contributing"></a>
+
+We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on:
+- How to add new papers / 如何添加新论文
+- Paper format specification / 论文格式规范
+- PR submission workflow / PR提交流程
+
+---
+
+## Related Resources / 相关资源 <a name="related-resources"></a>
+
+- [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM) — Large language model papers
+- [Awesome-LLM-Reasoning](https://github.com/atfortes/Awesome-LLM-Reasoning) — LLM reasoning papers  
+- [LLM-Agent-Survey](https://github.com/Paitesanshi/LLM-Agent-Survey) — Agent survey resources
+- [Awesome-AI-Agents](https://github.com/e2b-dev/awesome-ai-agents) — AI agent frameworks
+- [Papers with Code](https://paperswithcode.com/) — Find code for ML papers
+
+---
+
+<div align="center">
+  <sub>⭐ Star this repo if you find it helpful! / 如果对您有帮助，请点个星！</sub>
+</div>

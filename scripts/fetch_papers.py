@@ -191,7 +191,7 @@ def format_markdown_table(papers: list[dict], venue: str, year: int) -> str:
 
         lines.append(f"| {title_cell} | {author_str} | {tags} | {paper_link} | {code_cell} |")
 
-    return "\n".join(lines)
+    return "\n".join(lines) + "\n"
 
 
 def main():

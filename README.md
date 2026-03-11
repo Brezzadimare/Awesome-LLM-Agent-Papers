@@ -46,7 +46,7 @@ English | [贡献指南](CONTRIBUTING.md)
 | Year | File | # Papers |
 |------|------|----------|
 | 2024 | [papers/NeurIPS/2024.md](papers/NeurIPS/2024.md) | 20 |
-| 2025 | [papers/NeurIPS/2025.md](papers/NeurIPS/2025.md) | 4+ |
+| 2025 | [papers/NeurIPS/2025.md](papers/NeurIPS/2025.md) | 23 |
 | 2026 | [papers/NeurIPS/2026.md](papers/NeurIPS/2026.md) | TBD |
 
 ---
@@ -69,8 +69,8 @@ English | [贡献指南](CONTRIBUTING.md)
 | Venue | 2023 | 2024 | 2025 | Total |
 |-------|------|------|------|-------|
 | ICLR  | —    | 21   | 21   | 42    |
-| NeurIPS | —  | 20   | 4+   | 24+   |
-| **Total** | — | **41** | **25+** | **66+** |
+| NeurIPS | —  | 20   | 23   | 43    |
+| **Total** | — | **41** | **44** | **85** |
 
 ### Topic Distribution
 

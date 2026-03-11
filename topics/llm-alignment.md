@@ -29,20 +29,20 @@
 
 ## 🛡️ Safety & Constitutional AI
 
-| Title | Authors | Venue | Tags | Paper |
-|-------|---------|-------|------|-------|
-| [The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning](https://arxiv.org/abs/2312.01552) | Lin et al. | NeurIPS 2024 | `alignment` `safety` | [arXiv](https://arxiv.org/abs/2312.01552) |
-| Constitutional AI: Harmlessness from AI Feedback | Bai et al. | Anthropic 2022 | `alignment` `safety` | [arXiv](https://arxiv.org/abs/2212.08073) |
-| Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations | Inan et al. | 2023 | `safety` | [arXiv](https://arxiv.org/abs/2312.06674) |
+| Title | Authors | Venue | Tags | Paper | Code |
+|-------|---------|-------|------|-------|------|
+| [The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning](https://arxiv.org/abs/2312.01552) | Lin et al. | NeurIPS 2024 | `alignment` `safety` | [arXiv](https://arxiv.org/abs/2312.01552) | — |
+| Constitutional AI: Harmlessness from AI Feedback | Bai et al. | Anthropic 2022 | `alignment` `safety` | [arXiv](https://arxiv.org/abs/2212.08073) | — |
+| Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations | Inan et al. | 2023 | `safety` | [arXiv](https://arxiv.org/abs/2312.06674) | — |
 
 ---
 
 ## 🔬 Process Reward & Critique
 
-| Title | Authors | Venue | Tags | Paper |
-|-------|---------|-------|------|-------|
-| Let's Verify Step by Step | Lightman et al. | ICLR 2024 | `alignment` `reasoning` | [arXiv](https://arxiv.org/abs/2305.20050) |
-| [SELF-RAG: Learning to Retrieve, Generate, and Critique](https://arxiv.org/abs/2310.11511) | Asai et al. | ICLR/NeurIPS 2024 | `RAG` `alignment` | [arXiv](https://arxiv.org/abs/2310.11511) |
+| Title | Authors | Venue | Tags | Paper | Code |
+|-------|---------|-------|------|-------|------|
+| Let's Verify Step by Step | Lightman et al. | ICLR 2024 | `alignment` `reasoning` | [arXiv](https://arxiv.org/abs/2305.20050) | — |
+| [SELF-RAG: Learning to Retrieve, Generate, and Critique](https://arxiv.org/abs/2310.11511) | Asai et al. | ICLR/NeurIPS 2024 | `RAG` `alignment` | [arXiv](https://arxiv.org/abs/2310.11511) | — |
 
 ---
 

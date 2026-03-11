@@ -9,12 +9,12 @@
 
 Foundational works on prompting LLMs to reason step-by-step.
 
-| Title | Authors | Venue | Tags | Paper |
-|-------|---------|-------|------|-------|
-| Chain-of-Thought Prompting Elicits Reasoning in Large Language Models | Wei et al. | NeurIPS 2022 | `reasoning` | [arXiv](https://arxiv.org/abs/2201.11903) |
-| Self-Consistency Improves Chain of Thought Reasoning in Language Models | Wang et al. | ICLR 2023 | `reasoning` | [arXiv](https://arxiv.org/abs/2203.11171) |
-| Tree of Thoughts: Deliberate Problem Solving with Large Language Models | Yao et al. | NeurIPS 2023 | `reasoning` `planning` | [arXiv](https://arxiv.org/abs/2305.10601) |
-| Graph of Thoughts: Solving Elaborate Problems with Large Language Models | Besta et al. | AAAI 2024 | `reasoning` | [arXiv](https://arxiv.org/abs/2308.09687) |
+| Title | Authors | Venue | Tags | Paper | Code |
+|-------|---------|-------|------|-------|------|
+| Chain-of-Thought Prompting Elicits Reasoning in Large Language Models | Wei et al. | NeurIPS 2022 | `reasoning` | [arXiv](https://arxiv.org/abs/2201.11903) | — |
+| Self-Consistency Improves Chain of Thought Reasoning in Language Models | Wang et al. | ICLR 2023 | `reasoning` | [arXiv](https://arxiv.org/abs/2203.11171) | — |
+| Tree of Thoughts: Deliberate Problem Solving with Large Language Models | Yao et al. | NeurIPS 2023 | `reasoning` `planning` | [arXiv](https://arxiv.org/abs/2305.10601) | [GitHub](https://github.com/princeton-nlp/tree-of-thought-llm) |
+| Graph of Thoughts: Solving Elaborate Problems with Large Language Models | Besta et al. | AAAI 2024 | `reasoning` | [arXiv](https://arxiv.org/abs/2308.09687) | [GitHub](https://github.com/spcl/graph-of-thoughts) |
 
 ---
 
@@ -65,10 +65,10 @@ See also: [ICLR 2024](../papers/ICLR/2024.md#-reasoning)
 
 ## 🏆 Process Reward Models
 
-| Title | Authors | Venue | Tags | Paper |
-|-------|---------|-------|------|-------|
-| Let's Verify Step by Step | Lightman et al. | ICLR 2024 | `reasoning` `RLHF` | [arXiv](https://arxiv.org/abs/2305.20050) |
-| Math-Shepherd: Verify and Reinforce LLMs Step-by-step | Wang et al. | ACL 2024 | `reasoning` `math` | [arXiv](https://arxiv.org/abs/2312.08935) |
+| Title | Authors | Venue | Tags | Paper | Code |
+|-------|---------|-------|------|-------|------|
+| Let's Verify Step by Step | Lightman et al. | ICLR 2024 | `reasoning` `RLHF` | [arXiv](https://arxiv.org/abs/2305.20050) | — |
+| Math-Shepherd: Verify and Reinforce LLMs Step-by-step | Wang et al. | ACL 2024 | `reasoning` `math` | [arXiv](https://arxiv.org/abs/2312.08935) | — |
 
 ---
 

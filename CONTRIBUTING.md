@@ -105,7 +105,7 @@ PRs will be reviewed for:
 ## Reporting Issues / 报告问题
 
 If you find a broken link, incorrect information, or a missing important paper,  
-please [open an issue](https://github.com/jgteng/Awesome-LLM-Agent-Papers/issues).
+please [open an issue](https://github.com/Brezzadimare/Awesome-LLM-Agent-Papers/issues).
 
 ---
 

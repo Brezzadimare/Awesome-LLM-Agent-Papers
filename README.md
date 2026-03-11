@@ -1,8 +1,8 @@
 # Awesome LLM Agent Papers / 大语言模型智能体论文精选
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Stars](https://img.shields.io/github/stars/jgteng/Awesome-LLM-Agent-Papers?style=social)](https://github.com/jgteng/Awesome-LLM-Agent-Papers/stargazers)
-[![Forks](https://img.shields.io/github/forks/jgteng/Awesome-LLM-Agent-Papers?style=social)](https://github.com/jgteng/Awesome-LLM-Agent-Papers/network/members)
+[![Stars](https://img.shields.io/github/stars/Brezzadimare/Awesome-LLM-Agent-Papers?style=social)](https://github.com/Brezzadimare/Awesome-LLM-Agent-Papers/stargazers)
+[![Forks](https://img.shields.io/github/forks/Brezzadimare/Awesome-LLM-Agent-Papers?style=social)](https://github.com/Brezzadimare/Awesome-LLM-Agent-Papers/network/members)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 

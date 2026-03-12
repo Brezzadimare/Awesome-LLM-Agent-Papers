@@ -15,6 +15,7 @@ English | [贡献指南](CONTRIBUTING.md)
 
 ## Table of Contents / 目录
 
+- [🚀 Usage / 使用方法](#usage)
 - [📄 Papers by Venue / 按会议分类](#papers-by-venue)
   - [ICLR](#iclr)
   - [NeurIPS](#neurips)
@@ -28,6 +29,76 @@ English | [贡献指南](CONTRIBUTING.md)
 - [📊 Statistics / 统计](#statistics)
 - [🤝 Contributing / 贡献](#contributing)
 - [🔗 Related Resources / 相关资源](#related-resources)
+
+---
+
+## Usage / 使用方法 <a name="usage"></a>
+
+### 1. Browse the paper list / 浏览论文列表
+
+No installation is needed to read the lists.  
+无需安装任何依赖，直接在 GitHub 上浏览 Markdown 文件即可。
+
+- **By venue / 按会议浏览:** Open any file under [`papers/`](papers/) (e.g. [`papers/ICLR/2024.md`](papers/ICLR/2024.md)).
+- **By topic / 按主题浏览:** Open any file under [`topics/`](topics/) (e.g. [`topics/llm-reasoning.md`](topics/llm-reasoning.md)).
+
+---
+
+### 2. Fetch new papers automatically / 自动抓取新论文
+
+The [`scripts/fetch_papers.py`](scripts/fetch_papers.py) script queries **OpenReview** and **Semantic Scholar** to collect relevant papers for a given venue and year, and writes the results as a Markdown table.
+
+该脚本通过查询 OpenReview 和 Semantic Scholar，自动抓取指定会议和年份的相关论文，并输出为 Markdown 表格。
+
+#### Prerequisites / 环境准备
+
+Requires **Python 3.10+**.  需要 **Python 3.10+**。
+
+```bash
+# Install dependencies / 安装依赖
+pip install -r scripts/requirements.txt
+```
+
+#### Optional: API key / 可选：配置 API 密钥
+
+Create a `.env` file in the repository root to avoid Semantic Scholar rate limits:  
+在项目根目录创建 `.env` 文件可提升 Semantic Scholar 的请求频率上限：
+
+```
+SEMANTIC_SCHOLAR_API_KEY=<your-key>
+```
+
+> Get a free key at <https://www.semanticscholar.org/product/api>
+
+#### Run the script / 运行脚本
+
+```bash
+# Fetch ICLR 2024 papers / 抓取 ICLR 2024 论文
+python scripts/fetch_papers.py --venue ICLR --year 2024 --output papers/ICLR/2024_fetched.md
+
+# Fetch NeurIPS 2025 papers / 抓取 NeurIPS 2025 论文
+python scripts/fetch_papers.py --venue NeurIPS --year 2025 --output papers/NeurIPS/2025_fetched.md
+
+# Also save raw JSON output / 同时保存原始 JSON 数据
+python scripts/fetch_papers.py --venue ICLR --year 2024 \
+    --output papers/ICLR/2024_fetched.md \
+    --json papers/ICLR/2024_fetched.json
+
+# Skip Semantic Scholar enrichment (faster) / 跳过 Semantic Scholar 补全（速度更快）
+python scripts/fetch_papers.py --venue ICLR --year 2024 \
+    --output papers/ICLR/2024_fetched.md \
+    --skip-semantic-scholar
+```
+
+#### CLI options / 命令行参数
+
+| Flag | Description |
+|------|-------------|
+| `--venue` | Conference name: `ICLR` or `NeurIPS` / 会议名称 |
+| `--year` | Conference year, e.g. `2024` / 会议年份 |
+| `--output` | Path for the output Markdown file / 输出 Markdown 文件路径 |
+| `--json` | *(optional)* Path for a raw JSON dump / （可选）原始 JSON 输出路径 |
+| `--skip-semantic-scholar` | Skip Semantic Scholar enrichment step / 跳过 Semantic Scholar 补全步骤 |
 
 ---
 

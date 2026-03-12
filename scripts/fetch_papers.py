@@ -120,7 +120,7 @@ def enrich_with_semantic_scholar(papers: list[dict]) -> list[dict]:
     for paper in tqdm(papers, desc="Semantic Scholar"):
         try:
             results = sch.search_paper(paper["title"], limit=1, fields=[
-                "externalIds", "citationCount", "openAccessPdf", "publicationTypes",
+                "externalIds", "citationCount", "openAccessPdf", "publicationTypes", "url",
             ])
             if results and results[0]:
                 hit = results[0]
@@ -129,6 +129,18 @@ def enrich_with_semantic_scholar(papers: list[dict]) -> list[dict]:
                 if arxiv_id:
                     paper["arxiv"] = f"https://arxiv.org/abs/{arxiv_id}"
                 paper["citations"] = hit.citationCount or 0
+                # Fall back to open-access PDF or Semantic Scholar page for non-arXiv papers
+                if not arxiv_id:
+                    open_access = hit.openAccessPdf or {}
+                    if isinstance(open_access, dict):
+                        oa_url = open_access.get("url", "")
+                    else:
+                        oa_url = getattr(open_access, "url", "")
+                    if oa_url:
+                        paper["open_access_pdf"] = oa_url
+                    ss_url = getattr(hit, "url", "")
+                    if ss_url:
+                        paper["semantic_scholar_url"] = ss_url
         except Exception as exc:
             print(f"[WARN] Semantic Scholar lookup failed for '{paper['title']}': {exc}")
         time.sleep(0.3)
@@ -177,8 +189,29 @@ def format_markdown_table(papers: list[dict], venue: str, year: int) -> str:
     for p in papers:
         title = p.get("title", "Unknown")
         arxiv = p.get("arxiv", "")
-        paper_link = f"[arXiv]({arxiv})" if arxiv else "—"
-        title_cell = f"[{title}]({arxiv})" if arxiv else title
+        pdf = p.get("pdf", "")
+        open_access_pdf = p.get("open_access_pdf", "")
+        ss_url = p.get("semantic_scholar_url", "")
+
+        # Pick the best available link and label it accordingly
+        if arxiv:
+            paper_url = arxiv
+            paper_label = "arXiv"
+        elif pdf:
+            paper_url = pdf
+            paper_label = "PDF"
+        elif open_access_pdf:
+            paper_url = open_access_pdf
+            paper_label = "PDF"
+        elif ss_url:
+            paper_url = ss_url
+            paper_label = "Link"
+        else:
+            paper_url = ""
+            paper_label = ""
+
+        paper_link = f"[{paper_label}]({paper_url})" if paper_url else "—"
+        title_cell = f"[{title}]({paper_url})" if paper_url else title
 
         authors = p.get("authors", [])
         author_str = (

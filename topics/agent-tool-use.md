@@ -41,6 +41,7 @@
 | [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) | Yang et al. | NeurIPS 2024 | `agent` `code` | [arXiv](https://arxiv.org/abs/2405.15793) | [GitHub](https://github.com/princeton-nlp/SWE-agent) |
 | [OpenDevin: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) | Wang et al. | NeurIPS 2024 | `agent` `code` | [arXiv](https://arxiv.org/abs/2407.16741) | [GitHub](https://github.com/OpenDevin/OpenDevin) |
 | [Spider2-V: How Far Are Multimodal Agents From Automating Data Science Workflows?](https://arxiv.org/abs/2407.10956) | — | ICLR 2025 | `agent` `benchmark` | [arXiv](https://arxiv.org/abs/2407.10956) | [GitHub](https://github.com/xlang-ai/Spider2-V) |
+| [ClawBench: A Benchmark for Evaluating AI Web Agents in the Wild](https://arxiv.org/abs/2604.08523) | Reacher et al. | Preprint 2026 | `agent` `benchmark` `tool-use` | [arXiv](https://arxiv.org/abs/2604.08523) | [GitHub](https://github.com/TIGER-AI-Lab/ClawBench) |
 
 ---
 
